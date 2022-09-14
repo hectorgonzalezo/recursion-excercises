@@ -45,3 +45,7 @@ console.log(mergeSort([1, 10, 8, 3,  2, 4, 7, 9, 5, 6])) // Result = [1, 2, 3, 4
 
 console.log(mergeSort([1, 2.1, -3, 800000, 3.2, Math.PI, 9007199254740991n, -4.99999, 80, 9, -5, 3, 2 ]))
 // Result = [-5, -4.99999, -3, 1, 2, 2.1, 3, 3.141592653589793, 3.2, 9, 80, 800000, 9007199254740991n]
+
+// Test with random numbers
+const randomArray = Array.from({length: 1000}, () => Math.random() * 40000);
+console.log(mergeSort(randomArray))
